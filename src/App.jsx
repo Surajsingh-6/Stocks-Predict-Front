@@ -19,7 +19,7 @@ function App() {
     formData.append('ltp', ltp);
 
     try {
-      const res = await axios.post('http://127.0.0.1:8000/getdata', formData, {
+      const res = await axios.post('https://py-api-production.up.railway.app/getdata', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
